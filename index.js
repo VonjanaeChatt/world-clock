@@ -1,4 +1,5 @@
 let laDiv = document.getElementById("los-angeles")
+let citySelect = document.getElementById("city-select")
 
 function updateTime() {
   let now = moment().tz("America/Los_Angeles")
@@ -8,3 +9,11 @@ function updateTime() {
 
 setInterval(updateTime, 1000)
 updateTime()
+
+citySelect.addEventListener("change", function() {
+  let tz = citySelect.value
+  if (tz) {
+    let now = moment().tz(tz)
+    alert("It is " + now.format("dddd, MMMM D YYYY h:mm A") + " in " + tz)
+  }
+})
