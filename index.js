@@ -13,6 +13,9 @@ updateTime()
 citySelect.addEventListener("change", function() {
   let tz = citySelect.value
   if (tz) {
+    if (tz === "current") {
+      tz = moment.tz.guess()
+    }
     let now = moment().tz(tz)
     alert("It is " + now.format("dddd, MMMM D YYYY h:mm A") + " in " + tz)
   }
