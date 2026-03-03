@@ -1,3 +1,12 @@
 body{
-    background-color:bisque;
+    background-image: url("worldclock.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container{
+display:flex;
+justify-content:center;
+align-items: center;
 }
