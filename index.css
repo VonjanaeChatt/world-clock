@@ -4,10 +4,15 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  font-family: sans-serif;
-  margin: 0;
+  font-family: "Jacquard 24", system-ui;
+  font-weight: 400;
+  font-style: normal;
+   margin: 0;
   padding: 0;
 }
+
+ 
+
 
 h1 {
   text-align: center;
@@ -58,7 +63,9 @@ select {
   vertical-align: middle;
   line-height: 48px;
 }
-
+a{color:rgb(174, 0, 87);
+font-family: 'sanserif';
+}
 footer {
   text-align: center;
   font-size: 18px;
