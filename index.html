@@ -4,38 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data.min.js"></script>
     <title>World Clock</title>
-    
 </head>
 <body>
     <div class="container">
-    <h1>
-        World Clock
-    </h1>
+        <h1>World Clock</h1>
 
-<select>
-    <option value="">Select a city...</option>
-    <option value="">London</option>
-    <option value="">New York</option>
-    <option value="">Paris</option>
-    <option value="">Miami</option>
-</select>
-<div class="city">
-<h2>Los Angeles🇺🇸</h2>
-<div class="date">march 3 2026</div>
-<div class="time">2:14:26 pm</div>
-</div>
-<div class="city">
-<h2>London🇦🇺</h2>
-<div class="date">march 3 2026</div>
-<div class="time">2:14:26 pm</div>
-</div>
+        <select id="city-select">
+            <option value="">Select a city...</option>
+            <option value="Europe/London">London 🇬🇧</option>
+            <option value="America/New_York">New York 🇺🇸</option>
+            <option value="Europe/Paris">Paris 🇫🇷</option>
+            <option value="America/Los_Angeles">Los Angeles 🇺🇸</option>
+        </select>
 
-</div>
+        <div id="cities">
+            <div class="city" id="los-angeles">
+                <h2>Los Angeles 🇺🇸</h2>
+                <div class="date">--</div>
+                <div class="time">--</div>
+            </div>
+            <div class="city" id="london">
+                <h2>London 🇬🇧</h2>
+                <div class="date">--</div>
+                <div class="time">--</div>
+            </div>
+            <div class="city" id="paris">
+                <h2>Paris 🇫🇷</h2>
+                <div class="date">--</div>
+                <div class="time">--</div>
+            </div>
+        </div>
+    </div>
 
-    <footer>This was coded by Vonjanae Chatt is open-sourced on Github and hosted on Netlify</footer>
-<script src="index.js"></script>
+    <footer>This was coded by Vonjanae Chatt and is open-sourced on Github and hosted on Netlify</footer>
+
+    <script src="index.js"></script>
 </body>
-
 </html>
